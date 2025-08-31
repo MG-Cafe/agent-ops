@@ -90,6 +90,21 @@ See [deployment/README.md](deployment/README.md) for instructions.
 The repository includes a Terraform configuration for the setup of a production Google Cloud project. Refer to [deployment/README.md](deployment/README.md) for detailed instructions on how to deploy the infrastructure and application.
 
 
+## Testing
+
+The project includes comprehensive testing capabilities:
+
+- **Unit Tests** (`tests/unit/`) - Test individual components and functions
+- **Integration Tests** (`tests/integration/`) - Test agent workflows end-to-end
+- **Load Tests** (`tests/load_test/`) - Performance and scalability testing with Locust
+
+Run all tests with:
+```bash
+make test
+```
+
+For detailed testing instructions, see the [Developer Guide](docs/developer-guide.md#testing).
+
 ## Documentation
 
 Comprehensive documentation is available in the `docs/` directory:
