@@ -65,6 +65,8 @@ This template follows a "bring your own agent" approach - you focus on your busi
 
 The project includes a `GEMINI.md` file that provides context for AI tools like Gemini CLI when asking questions about your template.
 
+For comprehensive development guidance, see the [Developer Guide](docs/developer-guide.md).
+
 
 ## Deployment
 
@@ -88,8 +90,18 @@ See [deployment/README.md](deployment/README.md) for instructions.
 The repository includes a Terraform configuration for the setup of a production Google Cloud project. Refer to [deployment/README.md](deployment/README.md) for detailed instructions on how to deploy the infrastructure and application.
 
 
+## Documentation
+
+Comprehensive documentation is available in the `docs/` directory:
+
+- **[API Reference](docs/api-reference.md)** - Complete function signatures and usage examples
+- **[Developer Guide](docs/developer-guide.md)** - Step-by-step development workflow and best practices
+- **[Configuration Reference](docs/configuration.md)** - Environment variables, model settings, and deployment configuration
+
 ## Monitoring and Observability
 > You can use [this Looker Studio dashboard](https://lookerstudio.google.com/reporting/46b35167-b38b-4e44-bd37-701ef4307418/page/tEnnC
 ) template for visualizing events being logged in BigQuery. See the "Setup Instructions" tab to getting started.
 
 The application uses OpenTelemetry for comprehensive observability with all events being sent to Google Cloud Trace and Logging for monitoring and to BigQuery for long term storage.
+
+For detailed monitoring configuration, see the [Configuration Reference](docs/configuration.md#monitoring-and-observability).
